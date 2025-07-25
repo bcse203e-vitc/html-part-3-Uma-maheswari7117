@@ -1,0 +1,51 @@
+<html lang="en">
+    <head>
+        <title>Online Event Registration form</title>
+    </head>
+    <body>
+        
+        <h1>Register for the Online Event</h1>
+        <form action="/register" method="post"></form>
+        <label for="full name">Full Name:</label>
+        <input type="text" id="full name" name="full name" placeholder="Enter Name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="example@domain.com" required><br><br>
+
+        <label for="phone number">Phone Number:</label>
+        <input type="tel" id="phone " name="phone" placeholder="10-digit-number"required><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender"  value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <label for="age group">Age group:</label>
+        <select id="age group" name="age group" required>
+      <option >Select Age Group:</option>
+      <option value="Under 18">Under 18</option>
+      <option value="18-25">18-25</option>
+      <option value="26-40">26-40</option>
+      <option value="41-60">41-60</option>
+      <option value="60+">60+</option>
+    </select><br><br>
+
+    <label for="topic ">Topics of Interest:</label><br>
+    <input type="checkbox" id="ai" name="topics" value="AI">
+    <label for="ai">Artificial Intelligence</label><br>
+    <input type="checkbox" id="web" name="topics" value="Web Development">
+    <label for="web">Web Development</label><br>
+    <input type="checkbox" id="ml" name="topics" value="Machine Learning">
+    <label for="ml">Machine Learning</label><br>
+    <input type="checkbox" id="cloud" name="topics" value="Cloud Computing">
+    <label for="cloud">Quantum Computing</label><br><br>
+    <label for="comments">Additional Comments:</label><br>
+    <textarea id="comments" name="comments" rows="3" cols="40" placeholder="Write your comments here..."></textarea><br><br>
+    <button type="submit">Register</button>
+  </form>
+  
+    </body>
+</html>
